@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-page {
+    @apply min-h-screen flex flex-col;
+  }
+
+  .text-page main {
+    @apply flex-grow bg-gray-100;
+  }
+
+  .text-page .content {
+    @apply  max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8;
+  }
+
+  .text-page h1 {
+    @apply text-black text-center text-xl;
+  }
+
+  .text-page .body {
+    @apply mt-6  text-gray-500;
+  }
+
+  .text-page h2 {
+    @apply text-lg font-semibold mt-6 mb-2;
+  }
+
+  .text-page p {
+    @apply mb-4;
+  }
+
+  .text-page ul {
+    @apply list-disc pl-5 mb-4;
+  }
+
+  .text-page li {
+    @apply mb-2;
+  }
+
+  .text-page a {
+    @apply text-blue-600 hover:text-blue-800;
+  }
+}

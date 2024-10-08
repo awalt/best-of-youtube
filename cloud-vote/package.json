@@ -1,0 +1,25 @@
+{
+  "name": "cloud-vote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @google-cloud/functions-framework --target=handleVote --reload",
+    "watch": "npm-watch start"
+  },
+  "watch": {
+        "start": "*.js"
+    },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.0",
+    "@upstash/redis": "^1.31.5",
+    "ioredis": "^5.4.1"
+  },
+  "devDependencies": {
+    "npm-watch": "^0.13.0"
+  }
+}
